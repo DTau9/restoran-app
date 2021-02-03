@@ -1,0 +1,82 @@
+.item-page {
+	align-items    : center;
+	display        : flex;
+	height         : 100vh;
+	justify-content: center;
+	list-style-type: none;
+	overflow       : auto;
+}
+
+.item-page {
+
+	&__item {
+		background-color: rgba(84, 84, 84, 0.8);
+		box-shadow      : 5px 5px 45px rgba(256, 256, 256, .1);
+		border-radius   : 8px;
+		height          : 616px;
+		margin          : 90px 0 90px;
+		min-height      : 400px;
+		padding         : 10px;
+		position        : relative;
+		width           : 75%;
+	}
+
+	&__title {
+		font-size    : 22px;
+		margin-bottom: 20px;
+		text-align   : center;
+	}
+
+	&__img {
+		border-radius: 8px;
+		width        : 100%;
+		height       : 400px;
+		object-fit   : cover;
+		margin-bottom: 20px;
+	}
+
+	&__category,
+	&__price {
+		font-size    : 18px;
+		font-weight  : 300;
+		margin-bottom: 10px;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	&__icon {
+		background-position: center;
+		background-size    : cover;
+		background-repeat  : no-repeat;
+		height             : 40px;
+		position           : absolute;
+		top                : 8px;
+		left               : 11px;
+		width              : 40px;
+
+		&-salads {
+			background-image: url('https://images.vexels.com/media/users/3/141142/isolated/preview/d5ce613797b1fd08bdf3e038bfa1d0b2-colorful-salad-cartoon-by-vexels.png');
+		}
+
+		&-pizza {
+			background-image: url('http://www-static.dreambox.com/wp-content/uploads/2015/02/Prize-Icon-Pizza.png');
+		}
+
+		&-meat {
+			background-image: url('https://cdn2.iconfinder.com/data/icons/food-drinks-v3/512/Steak-512.png');
+		}
+	}
+
+	&__btn {
+		width           : 150px;
+		height          : 40px;
+		border          : none;
+		background-color: #29a745;
+		border-radius   : 4px;
+		color           : #fff;
+		font-size       : 16px;
+		cursor          : pointer;
+	}
+}
